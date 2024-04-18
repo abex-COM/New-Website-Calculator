@@ -1,6 +1,6 @@
 const buttons = document.querySelectorAll("button");
 const result = document.querySelector(".result");
-const input = document.querySelector("input");
+const input = document.querySelector(".input");
 
 
 function setValue(value) {
@@ -20,4 +20,27 @@ function clearOne()
     if (input.value.length == 0) {
         result.textContent = '';
     }
+}
+
+function poweroff() {
+
+    const radiobtn = document.getElementsByName("power");
+
+    for (const rdbt of radiobtn) {
+         if(rdbt.checked){
+        
+             for (allbtns of buttons) {
+                 
+                 if (allbtns.disabled === true) {
+                     allbtns.disabled = false;
+                 }
+                 
+                 else
+                  allbtns.disabled = true;
+                 
+                 
+             }
+    }
+    }
+   
 }
