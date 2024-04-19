@@ -7,45 +7,40 @@
         font-size: 62.5%;
     }
     body{
+        align-items: center;
+        background-color: #fff;
         display: flex;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        height: 100vh;
         justify-content: center;
         width: 100%;
-        height: 100vh;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        align-items: center;
-    background-color: #fff;
-
     }
     .container{
-    width: 100%;
     display: grid;
-    grid-template-rows: 40% 8% 1fr;
     grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 40% 8% 1fr;
     height: 100%;
-  background: repeating-linear-gradient(rgb(6, 124, 202),rgb(39, 90, 220) );;
-
-
+    width: 100%;
+     background: repeating-linear-gradient(rgb(6, 124, 202),rgb(39, 90, 220) );;
     }
     .buttons{
-
-    display: grid;
-    grid-template-rows: repeat(5,1fr);
-    grid-template-columns: repeat(4,1fr);
-    gap: 2px;
-    justify-items: center;
     align-items: center;
-    font-size: 2rem;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    justify-items: center;
     user-select: none;
     }
-    .buttons >button{
-    border-radius: 8px;
-    width: 100%;
-    height: 100%;
-    border:2px solid #fff;
-    font-size: 2rem;
-    box-shadow: 20px 20px 5px #aba9a9,-20px -20px 65px #d2cfcf;
+  .buttons >button{
      font-family: 'Times New Roman', Times, serif;
      font-weight: 900;
+    border-radius: 8px;
+    border:2px solid #fff;
+    box-shadow: 20px 20px 5px #aba9a9,-20px -20px 65px #d2cfcf;
+    font-size:3rem;
+    height: 100%;
+    width: 100%;
     }
     button:active{
        box-shadow: 1px 1px 10px #eee6e6,-1px -1px 5px #c7bfbf;
@@ -56,7 +51,6 @@
         background-color:#ffff;
         color: #fff;
     }
-
     .screen{
     display: flex;
     flex-direction: column;
@@ -95,32 +89,22 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 5px;
-        
+        gap: 5px; 
     }
     input[radio]{
-        width: 20px;
-        height: 20px;
-
-    }
-   .buttons button:first-child{
-       background-color: #ff0000;
-        border-color: #ff0000;
+        width: 60px;
+        height: 60px;
     }
     .buttons button:last-child{
         background-color: green;
         border-color: green;
     }
-      .buttons button:nth-child(1),:nth-child(2),:nth-child(3),:nth-child(4),:nth-child(8),:nth-child(12),:nth-child(16){
-          color: rgb(16, 247, 16);
-    }
 .control{
-    display: flex;
-    /* height: 50px; */
     align-items: center;
-    gap: 15px;
-    font-size: 2rem;
-    padding-right: 50px;
-    justify-content: end;
     color: #333;
+    display: flex;
+    font-size: 2.5em;
+    gap: 15px;
+    justify-content: end;
+    padding-right: 50px;
 }
