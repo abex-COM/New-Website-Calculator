@@ -22,7 +22,7 @@
     grid-template-rows: 40% 8% 1fr;
     grid-template-columns: repeat(1,1fr);
     height: 100%;
-  background: repeating-linear-gradient(rgb(4, 0, 255),yellow );;
+  background: repeating-linear-gradient(rgb(6, 124, 202),rgb(39, 90, 220) );;
 
 
     }
@@ -31,9 +31,7 @@
     display: grid;
     grid-template-rows: repeat(5,1fr);
     grid-template-columns: repeat(4,1fr);
-    gap: 5px;
-    padding: 5px;
-    background:repeating-radial-gradient(blue,red,yellow 10%);
+    gap: 2px;
     justify-items: center;
     align-items: center;
     font-size: 2rem;
@@ -43,17 +41,15 @@
     border-radius: 8px;
     width: 100%;
     height: 100%;
-    /* background-color: #ffffff; */
-    /* border: 2px #9ca5ae solid; */
     border:2px solid #fff;
     font-size: 2rem;
     box-shadow: 20px 20px 5px #aba9a9,-20px -20px 65px #d2cfcf;
-     
+     font-family: 'Times New Roman', Times, serif;
+     font-weight: 900;
     }
     button:active{
        box-shadow: 1px 1px 10px #eee6e6,-1px -1px 5px #c7bfbf;
-       /* background-color: #dbcccc; */
-     background:repeating-radial-gradient(#6d2ea8,#8a2be2  10%);
+     background-color: #c7bfbf;
 
     }
     button:disabled{
@@ -65,7 +61,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    border: 2px blueviolet solid;
     margin: 1rem;
     border-radius: 8px;
 
@@ -80,6 +75,7 @@
     padding: 1rem;
     text-align: right;       
     width: 99%;
+    color: #1f0edc;
     }
     input{
     width: 98%;
@@ -95,15 +91,6 @@
     background-color: #dbd5d5;
     
     }
-    .control{
-        display: flex;
-        /* height: 50px; */
-       align-items: center;
-        gap: 15px;
-        font-size: 2rem;
-        padding-right: 50px;
-        justify-content: end;
-    }
     .off,.on{
         display: flex;
         align-items: center;
@@ -116,3 +103,24 @@
         height: 20px;
 
     }
+   .buttons button:first-child{
+       background-color: #ff0000;
+        border-color: #ff0000;
+    }
+    .buttons button:last-child{
+        background-color: green;
+        border-color: green;
+    }
+      .buttons button:nth-child(1),:nth-child(2),:nth-child(3),:nth-child(4),:nth-child(8),:nth-child(12),:nth-child(16){
+          color: rgb(16, 247, 16);
+    }
+.control{
+    display: flex;
+    /* height: 50px; */
+    align-items: center;
+    gap: 15px;
+    font-size: 2rem;
+    padding-right: 50px;
+    justify-content: end;
+    color: #333;
+}
